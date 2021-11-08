@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    padding: 4%;
+    margin: 2%;
+    margin-left: 2%;
+    text-align: center;
+    color:white;
+    font-family: 'Lobster', cursive;
+    background-color:black;
+}  
+  h1{
+    color:white;
+    background-color: rgb(121, 11, 11);
+    padding: 1%;
+  
+  }   
+
+  body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .content {
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .header-video video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #303952;
+    z-index: 1;
+    opacity: .85;
+  }
+  
+  .header-content {
+    z-index: 2;
+  }
+  
+  .header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Lobster', cursive;
+  }
+  
+  .header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+  }
+  
+  .btn {
+    background:rgb(121, 11, 11);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 960px) {
+    .content {
+      padding: 0 3rem 0 3rem;
+    }
+  }
+  #navegador{
+      background-color: black;
+      border: 4px 4px;
+      padding: 10px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(121, 11, 11);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color:rgb(168, 42, 42);
+}
+#foto1{
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+#comida2{
+    float: left;
+    background-color: grey;  
+
+}
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns:auto auto auto auto; /*Make the grid smaller than the container*/
+  grid-gap: 15px;
+  background-color: rgb(121, 11, 11);
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.menu{
+  background-color:black;
+  border-radius: 20%;
+}
+
+#chef {
+  width: 300px;
+  height:200px;
+  padding: 6px;
+  border-radius:120px;
+  border:10px solid rgb(121, 11, 11);
+  float:left;
+}
