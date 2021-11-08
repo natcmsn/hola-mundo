@@ -122,8 +122,9 @@ li a:hover {
     background-color:rgb(168, 42, 42);
 }
 #foto1{
-    width: 50%;
+    width: 60%;
     height: 100%;
+    border-radius: 50%;
     
 }
 #comida2{
@@ -152,10 +153,10 @@ li a:hover {
 }
 
 #chef {
-  width: 300px;px;
+  width: 300px;
   height:200px;
   padding: 6px;
-  border-radius:170px;
+  border-radius:120px;
   border:10px solid rgb(121, 11, 11);
-  float:inline-start;
+  float:left;
 }
