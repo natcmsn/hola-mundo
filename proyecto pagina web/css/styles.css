@@ -1,3 +1,6 @@
+/*Inserté fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@300&family=Zen+Kurenaido&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 4%;
@@ -48,8 +51,9 @@
   }
   
   .header-video video {
-    min-width: 100%;
-    min-height: 100%;
+    /*min-width: 100%;
+    min-height: 100%;*/
+    max-width: 100%;  /*Añadí para que encaje en todo el ancho*/
   }
   
   .header-overlay {
@@ -58,9 +62,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #303952;
+    /*background: #303952;*/
     z-index: 1;
-    opacity: .85;
+    opacity: .60;/*.85;  Cambié opacidad*/
   }
   
   .header-content {
@@ -76,7 +80,14 @@
   .header-content p {
     font-size: 1.5rem;
     display: block;
-    padding-bottom: 2rem;
+    padding: 2rem; /*Cambié padding-bottom*/
+    text-align: center; /*Añadí justify*/
+  }
+
+  h2{   /*Añadí h2*/
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 2rem;
   }
   
   .btn {
@@ -87,22 +98,23 @@
     text-decoration: none;
   }
   
-  @media (max-width: 960px) {
+  /*@media (max-width: 960px) {
     .content {
       padding: 0 3rem 0 3rem;
     }
-  }
-  #navegador{
-      background-color: black;
+  }*/
+  /*#navegador{
+      background-color: rgb(121, 11, 11);
       border: 4px 4px;
       padding: 10px;
-  }
-  ul {
+  }*/
+  nav {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.5% 0.5% 0.5% 2%; /*Cambié padding: 0*/
     overflow: hidden;
     background-color:rgb(121, 11, 11);
+    font-size: 20px; /*Aumenté el tamaño de la letra*/
 }
 
 li {
@@ -141,6 +153,11 @@ li a:hover {
   padding: 20px;
 }
 
+#quiensomos{  /*Añadí esto*/
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 .grid-container > div {
   background-color: black;
   text-align: center;
@@ -150,6 +167,11 @@ li a:hover {
 .menu{
   background-color:black;
   border-radius: 20%;
+
+}
+
+.menu img{    /*Añadí ancho de img de menú*/
+  width: 50%;
 }
 
 #chef {

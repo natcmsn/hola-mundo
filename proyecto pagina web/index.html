@@ -7,21 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  Quité estos links-->
+    <link rel="icon" href="img/pizza.png" type="image/x-icon">
+    <!--Añadí favicon-->
 
     <title>Nonneto Ristorante</title>
 </head>
 
 <body>
-    <header class="header content">
+    <header class="header content" id="headerid"> <!--Añadí id para nav-->
         <div class="header-video">
-            <video src="video/video4.mp4" autoplay></video>
+            <video src="video/video4.mp4" autoplay console></video><!--Añadí console y ahora funciona video-->
         </div>
         <div class="header-overlay"></div>
         <div class="header-content">
             <h1>NONNETO RESTAURANTE</h1>
-            <p>¡BIENVENIDOS!</p>
+            <h2>¡BIENVENIDOS!</h2>
+            <!--Cambié p por h2-->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque placeat sequi commodi
                 rem
                 ratione
@@ -35,42 +38,47 @@
                 commodi?
 
             </p>
-            <a href="reserva.html" class="btn">Reservas</a>
+            <a href="reserva.html" class="btn" id="reservasid">Reservas</a> <!--Añadí id-->
         </div>
-        </ul>
-        </div>
-
     </header>
     <br>
     <br>
-    <div id="navegador">
-        <ul>
-            <li><a href="Home">Home</a></li>
-            <li><a href="Menu">Menu</a></li>
-            <li><a href="¿Quién Somos?">¿Quién Somos?</a></li>
-            <li><a href="Contacto">Contacto</a></li>
-            <li><a href="Reservas">Reservas</a></li>
-            <li><a href="Reservas">Social</a></li>
+    <!--<div id="navegador"> Quité este div-->
+    <nav> <!--Cambié ul por nav y en href puse # a cada apartado-->
+        <li><a href="#headerid">Home</a></li>
+        <li><a href="#menuid">Menu</a></li>
+        <li><a href="#quiensomos">¿Quién Somos?</a></li>
+        <li><a href="#contactoid">Contacto</a></li>
+        <li><a href="#reservasid">Reservas</a></li>
+        <li><a href="#chef">Social</a></li>
+    </nav>
 
-    </div>
+    <!--</div>-->
     <br>
     <img id="foto1" src="/img/comida1.jpg" alt="foto1">
-    <h1>¿QUIÉN SOMOS ?</h1><br>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae magnam temporibus corporis amet, eveniet ad
-        obcaecati ab quibusdam nesciunt ea nemo alias sunt culpa, labore sequi deleniti! Doloribus, unde soluta?Lorem
-        ipsum dolor, sit amet consectetur adipisicing elit. Esse quasi ratione laudantium sequi ipsum ullam, nam
-        consequuntur soluta quaerat voluptatibus deserunt nisi at sit veniam aliquid cumque fugit facilis sint. Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias alias nemo ullam atque deleniti in. Enim,
-        voluptatibus blanditiis, quaerat voluptates facilis mollitia fuga neque consectetur obcaecati nulla, nam aut.
-    </p>
+    <div id="quiensomos">
+        <!--Añadí div-->
+        <h1>¿QUIÉN SOMOS?</h1><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae magnam temporibus corporis amet,
+            eveniet ad
+            obcaecati ab quibusdam nesciunt ea nemo alias sunt culpa, labore sequi deleniti! Doloribus, unde
+            soluta?Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Esse quasi ratione laudantium sequi ipsum ullam, nam
+            consequuntur soluta quaerat voluptatibus deserunt nisi at sit veniam aliquid cumque fugit facilis sint.
+            Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias alias nemo ullam atque deleniti in.
+            Enim,
+            voluptatibus blanditiis, quaerat voluptates facilis mollitia fuga neque consectetur obcaecati nulla, nam
+            aut.
+        </p>
+    </div>
 
-
-    <div class="header">
+    <!--<div class="header">
         <div class="overlay">
         </div>
     </div>
     <div class="monthChange"></div>
-    </div>
+    </div>      Quité esto-->
     <div class="grid-container">
         <div><img id="comida2" src="/img/comida2.jpg" alt="plato 1" width="100%"> ¡Todos los Lunes!<br>
             <p>Pizza 7€</p>
@@ -88,10 +96,11 @@
     </div>
     <br>
     <!--Div MENU-->
-    <div class="menu">
+    <div class="menu" id="menuid">  <!--Añadí id-->
         <h1>MENU</h1>
         <br>
-        <img src="/img/Menú .png" width="300px">
+        <img src="/img/Menú .png">
+        <!--width="300px"-->
     </div>
 
     <br>
@@ -119,7 +128,7 @@
 <br>
 <br>
 <footer>
-    <h1>CONTACTO</h1><br>
+    <h1 id="contactoid">CONTACTO</h1><br> <!--Añadí id-->
     <h2>+34 123-345-677 | +434 879-098-999 | nonnetto@nonnetto.com </h2>
     <br>
 </footer>
